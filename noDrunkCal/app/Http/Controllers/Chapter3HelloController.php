@@ -15,7 +15,7 @@ class Chapter3HelloController extends Controller
         //    ['name'=>'Hanako Tanako', 'mail'=>'hanako@flower'],
         //    ['name'=>'Sachiko Suzuki', 'mail'=>'sachivo@flower'],
         //];
-        return view('hello.index', ['message'=>'Hello!']);
+        //return view('hello.index', ['message'=>'Hello!']);
     }
 
 //    public function post(Request $request)

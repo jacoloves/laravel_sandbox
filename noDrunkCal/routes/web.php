@@ -68,6 +68,12 @@ Route::get('hello7', function() {
 Route::get('hello8', 'App\Http\Controllers\Chapter3HelloController@index');
 //Route::post('hello8', 'App\Http\Controllers\Chapter3HelloController@post');
 
+// chapter4
+Route::get('hello9', 'App\Http\Controllers\Chapter4HelloController@index')->middleware('helo');
+
+Route::get('hello10/validate', 'App\Http\Controllers\Chapter4HelloController@index');
+Route::post('hello10/validate', 'App\Http\Controllers\Chapter4HelloController@post');
+
 Route::get('/', function () {
     return view('welcome');
 });
