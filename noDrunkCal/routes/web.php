@@ -75,9 +75,12 @@ Route::get('hello10/cookie', 'App\Http\Controllers\Chapter4HelloController@index
 Route::post('hello10/cookie', 'App\Http\Controllers\Chapter4HelloController@post');
 
 // chapter5
-//Route::get('hello11', 'App\Http\Controllers\Chapter5HelloController@index');
+Route::get('hello11', 'App\Http\Controllers\Chapter5HelloController@index');
 Route::get('hello11/add', 'App\Http\Controllers\Chapter5HelloController@add');
-Route::get('hello11/add', 'App\Http\Controllers\Chapter5HelloController@create');
+Route::post('hello11/add', 'App\Http\Controllers\Chapter5HelloController@create');
+
+Route::get('hello11/edit', 'App\Http\Controllers\Chapter5HelloController@edit');
+Route::post('hello11/edit', 'App\Http\Controllers\Chapter5HelloController@update');
 
 Route::get('/', function () {
     return view('welcome');
