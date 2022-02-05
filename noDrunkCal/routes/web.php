@@ -82,6 +82,11 @@ Route::post('hello11/add', 'App\Http\Controllers\Chapter5HelloController@create'
 Route::get('hello11/edit', 'App\Http\Controllers\Chapter5HelloController@edit');
 Route::post('hello11/edit', 'App\Http\Controllers\Chapter5HelloController@update');
 
+Route::get('hello11/del', 'App\Http\Controllers\Chapter5HelloController@del');
+Route::post('hello11/del', 'App\Http\Controllers\Chapter5HelloController@remove');
+
+Route::get('hello11/show', 'App\Http\Controllers\Chapter5HelloController@show');
+
 Route::get('/', function () {
     return view('welcome');
 });
