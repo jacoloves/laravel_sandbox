@@ -87,6 +87,9 @@ Route::post('hello11/del', 'App\Http\Controllers\Chapter5HelloController@remove'
 
 Route::get('hello11/show', 'App\Http\Controllers\Chapter5HelloController@show');
 
+// chapter6
+Route::get('person', 'App\Http\Controllers\PersonController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
