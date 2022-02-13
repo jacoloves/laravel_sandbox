@@ -90,6 +90,9 @@ Route::get('hello11/show', 'App\Http\Controllers\Chapter5HelloController@show');
 // chapter6
 Route::get('person', 'App\Http\Controllers\PersonController@index');
 
+Route::get('person/find', 'App\Http\Controllers\PersonController@find');
+Route::post('person/find', 'App\Http\Controllers\PersonController@search');
+
 Route::get('/', function () {
     return view('welcome');
 });
