@@ -99,6 +99,9 @@ Route::post('person/add', 'App\Http\Controllers\PersonController@create');
 Route::get('person/edit', 'App\Http\Controllers\PersonController@edit');
 Route::post('person/edit', 'App\Http\Controllers\PersonController@update');
 
+Route::get('person/del', 'App\Http\Controllers\PersonController@delete');
+Route::post('person/del', 'App\Http\Controllers\PersonController@remove');
+
 Route::get('/', function () {
     return view('welcome');
 });
