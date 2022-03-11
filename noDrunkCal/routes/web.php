@@ -107,6 +107,9 @@ Route::get('board', 'App\Http\Controllers\BoardController@index');
 Route::get('board/add', 'App\Http\Controllers\BoardController@add');
 Route::post('board/add', 'App\Http\Controllers\BoardController@create');
 
+// chapter7
+Route::resource('rest', 'RestappController');
+
 Route::get('/', function () {
     return view('welcome');
 });
